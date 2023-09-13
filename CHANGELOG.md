@@ -7,5 +7,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 This is the initial release.
 
-[unreleased]: https://github.com/eclipse/keypop-calypso-crypto-symmetric-java-api/compare/0.1.0...HEAD
-[0.1.0]: https://github.com/eclipse/keypop-calypso-crypto-symmetric-java-api/releases/tag/0.1.0
+[unreleased]: https://github.com/eclipse-keypop/keypop-calypso-crypto-symmetric-java-api/compare/0.1.0...HEAD
+[0.1.0]: https://github.com/eclipse-keypop/keypop-calypso-crypto-symmetric-java-api/releases/tag/0.1.0
