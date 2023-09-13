@@ -1,0 +1,1 @@
+rootProject.name = "keypop-calypso-crypto-symmetric-java-api"
