@@ -11,6 +11,8 @@
 package org.eclipse.keypop.calypso.crypto.symmetric.spi;
 
 import java.util.List;
+import org.eclipse.keypop.calypso.crypto.symmetric.SymmetricCryptoException;
+import org.eclipse.keypop.calypso.crypto.symmetric.SymmetricCryptoIOException;
 
 /**
  * Factory of {@link SymmetricCryptoTransactionManagerSpi}.
@@ -34,6 +36,15 @@ public interface SymmetricCryptoTransactionManagerFactorySpi {
    * @since 0.1.0
    */
   int getMaxCardApduLengthSupported();
+
+  /**
+   * Retrieves and stores the terminal challenge in the SAM image for later use.
+   *
+   * @throws SymmetricCryptoException If an internal error occurred.
+   * @throws SymmetricCryptoIOException If an IO error occurred when processing a command.
+   * @since 0.1.0
+   */
+  void preInitTerminalSessionContext() throws SymmetricCryptoException, SymmetricCryptoIOException;
 
   /**
    * Returns a new instance of {@link SymmetricCryptoTransactionManagerSpi}.

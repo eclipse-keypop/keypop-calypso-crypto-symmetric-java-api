@@ -29,16 +29,6 @@ import org.eclipse.keypop.calypso.crypto.symmetric.SymmetricCryptoIOException;
 public interface SymmetricCryptoTransactionManagerSpi {
 
   /**
-   * Retrieves and stores the terminal challenge in the SAM image for later use.
-   *
-   * @throws SymmetricCryptoException If an internal error occurred.
-   * @throws SymmetricCryptoIOException If an IO error occurred when processing a command.
-   * @since 0.1.0
-   */
-  void preInitTerminalSecureSessionContext()
-      throws SymmetricCryptoException, SymmetricCryptoIOException;
-
-  /**
    * Initializes the crypto service context for operating a Secure Session with a card and gets the
    * terminal challenge.
    *
