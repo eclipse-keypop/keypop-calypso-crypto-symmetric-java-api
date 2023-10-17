@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -173,6 +173,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Indicates if the "extended" mode is supported.</div>
 </td>
 </tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#preInitTerminalSessionContext()">preInitTerminalSessionContext</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Retrieves and stores the terminal challenge in the SAM image for later use.</div>
+</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -217,6 +224,25 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A positive value.</dd>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>0.1.0</dd>
+</dl>
+</li>
+</ul>
+<a id="preInitTerminalSessionContext()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>preInitTerminalSessionContext</h4>
+<pre class="methodSignature">void&nbsp;preInitTerminalSessionContext()
+                            throws <a href="../SymmetricCryptoException.html" title="class in org.eclipse.keypop.calypso.crypto.symmetric">SymmetricCryptoException</a>,
+                                   <a href="../SymmetricCryptoIOException.html" title="class in org.eclipse.keypop.calypso.crypto.symmetric">SymmetricCryptoIOException</a></pre>
+<div class="block">Retrieves and stores the terminal challenge in the SAM image for later use.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../SymmetricCryptoException.html" title="class in org.eclipse.keypop.calypso.crypto.symmetric">SymmetricCryptoException</a></code> - If an internal error occurred.</dd>
+<dd><code><a href="../SymmetricCryptoIOException.html" title="class in org.eclipse.keypop.calypso.crypto.symmetric">SymmetricCryptoIOException</a></code> - If an IO error occurred when processing a command.</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>0.1.0</dd>
 </dl>
