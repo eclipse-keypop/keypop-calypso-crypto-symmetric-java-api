@@ -22,11 +22,12 @@ import org.eclipse.keypop.calypso.crypto.symmetric.SymmetricCryptoIOException;
  * Calypso card when using symmetric keys.
  *
  * <p>An instance of this interface can be obtained via the method {@link
- * SymmetricCryptoTransactionManagerFactorySpi#createTransactionManager(byte[], boolean, List)}.
+ * SymmetricCryptoCardTransactionManagerFactorySpi#createCardTransactionManager(byte[], boolean,
+ * List)}.
  *
  * @since 0.1.0
  */
-public interface SymmetricCryptoTransactionManagerSpi {
+public interface SymmetricCryptoCardTransactionManagerSpi {
 
   /**
    * Initializes the crypto service context for operating a Secure Session with a card and gets the

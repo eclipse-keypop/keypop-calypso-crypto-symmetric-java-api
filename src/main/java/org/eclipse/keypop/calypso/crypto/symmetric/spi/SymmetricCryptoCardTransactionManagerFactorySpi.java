@@ -15,11 +15,11 @@ import org.eclipse.keypop.calypso.crypto.symmetric.SymmetricCryptoException;
 import org.eclipse.keypop.calypso.crypto.symmetric.SymmetricCryptoIOException;
 
 /**
- * Factory of {@link SymmetricCryptoTransactionManagerSpi}.
+ * Factory of {@link SymmetricCryptoCardTransactionManagerSpi}.
  *
  * @since 0.1.0
  */
-public interface SymmetricCryptoTransactionManagerFactorySpi {
+public interface SymmetricCryptoCardTransactionManagerFactorySpi {
 
   /**
    * Indicates if the "extended" mode is supported.
@@ -47,17 +47,17 @@ public interface SymmetricCryptoTransactionManagerFactorySpi {
   void preInitTerminalSessionContext() throws SymmetricCryptoException, SymmetricCryptoIOException;
 
   /**
-   * Returns a new instance of {@link SymmetricCryptoTransactionManagerSpi}.
+   * Returns a new instance of {@link SymmetricCryptoCardTransactionManagerSpi}.
    *
    * @param cardKeyDiversifier The card key diversifier to use for the coming cryptographic
    *     computations.
    * @param useExtendedMode Request the use of the extended mode if supported by the crypto service.
    * @param transactionAuditData The reference of the list where the transaction audit data are
    *     recorded.
-   * @return A new instance of {@link SymmetricCryptoTransactionManagerSpi}.
+   * @return A new instance of {@link SymmetricCryptoCardTransactionManagerSpi}.
    * @throws IllegalStateException If the extended mode is not supported.
    * @since 0.1.0
    */
-  SymmetricCryptoTransactionManagerSpi createTransactionManager(
+  SymmetricCryptoCardTransactionManagerSpi createCardTransactionManager(
       byte[] cardKeyDiversifier, boolean useExtendedMode, List<byte[]> transactionAuditData);
 }
