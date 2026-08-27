@@ -18,12 +18,20 @@ import org.eclipse.keypop.calypso.crypto.symmetric.SymmetricCryptoIOException;
 /**
  * Factory of {@link SymmetricCryptoCardTransactionManagerSpi}.
  *
+ * <p>See <a
+ * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#type_SymmetricCryptoCardTransactionManagerFactorySpi">SymmetricCryptoCardTransactionManagerFactorySpi</a>
+ * for the normative contract.
+ *
  * @since 0.1.0
  */
 public interface SymmetricCryptoCardTransactionManagerFactorySpi {
 
   /**
    * Indicates if the "extended" mode is supported.
+   *
+   * <p>See <a
+   * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#op_SymmetricCryptoCardTransactionManagerFactorySpi_isExtendedModeSupported">SymmetricCryptoCardTransactionManagerFactorySpi.isExtendedModeSupported</a>
+   * for the normative contract.
    *
    * @return True if the "extended" mode is supported, false otherwise.
    * @since 0.1.0
@@ -33,6 +41,10 @@ public interface SymmetricCryptoCardTransactionManagerFactorySpi {
   /**
    * Returns the max length supported of the card APDU.
    *
+   * <p>See <a
+   * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#op_SymmetricCryptoCardTransactionManagerFactorySpi_getMaxCardApduLengthSupported">SymmetricCryptoCardTransactionManagerFactorySpi.getMaxCardApduLengthSupported</a>
+   * for the normative contract.
+   *
    * @return A positive value.
    * @since 0.1.0
    */
@@ -40,6 +52,10 @@ public interface SymmetricCryptoCardTransactionManagerFactorySpi {
 
   /**
    * Retrieves and stores the terminal challenge in the SAM image for later use.
+   *
+   * <p>See <a
+   * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#op_SymmetricCryptoCardTransactionManagerFactorySpi_preInitTerminalSessionContext">SymmetricCryptoCardTransactionManagerFactorySpi.preInitTerminalSessionContext</a>
+   * for the normative contract.
    *
    * @throws SymmetricCryptoException If an internal error occurred.
    * @throws SymmetricCryptoIOException If an IO error occurred when processing a command.
@@ -49,6 +65,10 @@ public interface SymmetricCryptoCardTransactionManagerFactorySpi {
 
   /**
    * Returns a new instance of {@link SymmetricCryptoCardTransactionManagerSpi}.
+   *
+   * <p>See <a
+   * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#op_SymmetricCryptoCardTransactionManagerFactorySpi_createCardTransactionManager">SymmetricCryptoCardTransactionManagerFactorySpi.createCardTransactionManager</a>
+   * for the normative contract.
    *
    * @param cardKeyDiversifier The card key diversifier to use for the coming cryptographic
    *     computations.
