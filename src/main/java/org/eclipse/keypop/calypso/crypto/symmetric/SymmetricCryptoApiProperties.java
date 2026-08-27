@@ -12,14 +12,18 @@
 package org.eclipse.keypop.calypso.crypto.symmetric;
 
 /**
- * API properties.
+ * Immutable properties of the Symmetric Crypto API.
+ *
+ * <p>See <a
+ * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#type_SymmetricCryptoApiProperties">SymmetricCryptoApiProperties</a>
+ * for the normative contract.
  *
  * @since 0.1.0
  */
 public final class SymmetricCryptoApiProperties {
 
   /**
-   * API version: {@value}
+   * Version of the API implemented by this binding, as a "MAJOR.MINOR" dotted decimal: {@value}
    *
    * @since 0.1.0
    */

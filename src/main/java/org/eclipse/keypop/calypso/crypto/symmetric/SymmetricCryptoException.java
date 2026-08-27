@@ -14,6 +14,10 @@ package org.eclipse.keypop.calypso.crypto.symmetric;
 /**
  * Indicates that an error occurred when processing a command.
  *
+ * <p>See <a
+ * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#type_SymmetricCryptoException">SymmetricCryptoException</a>
+ * for the normative contract.
+ *
  * @since 0.1.0
  */
 public final class SymmetricCryptoException extends Exception {

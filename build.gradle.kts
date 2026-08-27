@@ -3,7 +3,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 plugins {
-  java
+  `java-library`
   `maven-publish`
   signing
   id("com.diffplug.spotless") version "6.25.0"

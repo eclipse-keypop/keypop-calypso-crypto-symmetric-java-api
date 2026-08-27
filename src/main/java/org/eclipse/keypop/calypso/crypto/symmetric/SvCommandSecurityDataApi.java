@@ -14,6 +14,10 @@ package org.eclipse.keypop.calypso.crypto.symmetric;
 /**
  * Contains the input/output data of the SV command operations (LOAD / DEBIT / UNDEBIT).
  *
+ * <p>See <a
+ * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#type_SvCommandSecurityDataApi">SvCommandSecurityDataApi</a>
+ * for the normative contract.
+ *
  * @since 0.1.0
  */
 public interface SvCommandSecurityDataApi {
