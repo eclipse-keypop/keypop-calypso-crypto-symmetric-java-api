@@ -25,6 +25,10 @@ public interface SvCommandSecurityDataApi {
   /**
    * Returns the "SV Get" ingoing command data.
    *
+   * <p>See <a
+   * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#op_SvCommandSecurityDataApi_getSvGetRequest">SvCommandSecurityDataApi.getSvGetRequest</a>
+   * for the normative contract.
+   *
    * @return A not empty byte array containing the "SV Get" apdu request data.
    * @since 0.1.0
    */
@@ -32,6 +36,10 @@ public interface SvCommandSecurityDataApi {
 
   /**
    * Returns the "SV Get" outgoing command data.
+   *
+   * <p>See <a
+   * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#op_SvCommandSecurityDataApi_getSvGetResponse">SvCommandSecurityDataApi.getSvGetResponse</a>
+   * for the normative contract.
    *
    * @return A not empty byte array containing the "SV Get" apdu response data.
    * @since 0.1.0
@@ -41,6 +49,10 @@ public interface SvCommandSecurityDataApi {
   /**
    * Returns the "SV Load/Debit/Undebit" ingoing partial command data.
    *
+   * <p>See <a
+   * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#op_SvCommandSecurityDataApi_getSvCommandPartialRequest">SvCommandSecurityDataApi.getSvCommandPartialRequest</a>
+   * for the normative contract.
+   *
    * @return A not empty byte array containing the "SV Load/Debit/Undebit" apdu request data.
    * @since 0.1.0
    */
@@ -48,6 +60,10 @@ public interface SvCommandSecurityDataApi {
 
   /**
    * Sets the serial number to be placed in the "SV Load/Debit/Undebit" command request.
+   *
+   * <p>See <a
+   * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#op_SvCommandSecurityDataApi_setSerialNumber">SvCommandSecurityDataApi.setSerialNumber</a>
+   * for the normative contract.
    *
    * @param serialNumber The serial number to be used.
    * @return The current instance.
@@ -58,6 +74,10 @@ public interface SvCommandSecurityDataApi {
   /**
    * Sets the transaction number to be placed in the "SV Load/Debit/Undebit" command request.
    *
+   * <p>See <a
+   * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#op_SvCommandSecurityDataApi_setTransactionNumber">SvCommandSecurityDataApi.setTransactionNumber</a>
+   * for the normative contract.
+   *
    * @param transactionNumber The transaction number to be used.
    * @return The current instance.
    * @since 0.1.0
@@ -67,6 +87,10 @@ public interface SvCommandSecurityDataApi {
   /**
    * Sets the terminal challenge to be placed in the SV Load/Debit/Undebit command request.
    *
+   * <p>See <a
+   * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#op_SvCommandSecurityDataApi_setTerminalChallenge">SvCommandSecurityDataApi.setTerminalChallenge</a>
+   * for the normative contract.
+   *
    * @param terminalChallenge The terminal challenge to be used.
    * @return The current instance.
    * @since 0.1.0
@@ -75,6 +99,10 @@ public interface SvCommandSecurityDataApi {
 
   /**
    * Sets the terminal SV MAC to be placed in the "SV Load/Debit/Undebit" command request.
+   *
+   * <p>See <a
+   * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#op_SvCommandSecurityDataApi_setTerminalSvMac">SvCommandSecurityDataApi.setTerminalSvMac</a>
+   * for the normative contract.
    *
    * @param terminalSvMac The terminal SV MAC to be used.
    * @return The current instance.

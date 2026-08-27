@@ -38,6 +38,10 @@ public interface SymmetricCryptoCardTransactionManagerSpi {
    * Initializes the crypto service context for operating a Secure Session with a card and gets the
    * terminal challenge.
    *
+   * <p>See <a
+   * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#op_SymmetricCryptoCardTransactionManagerSpi_initTerminalSecureSessionContext">SymmetricCryptoCardTransactionManagerSpi.initTerminalSecureSessionContext</a>
+   * for the normative contract.
+   *
    * @return The terminal challenge.
    * @throws SymmetricCryptoException If an internal error occurred.
    * @throws SymmetricCryptoIOException If an IO error occurred when processing a command.
@@ -48,6 +52,10 @@ public interface SymmetricCryptoCardTransactionManagerSpi {
 
   /**
    * Stores the data needed to initialize the session MAC computation for a Secure Session.
+   *
+   * <p>See <a
+   * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#op_SymmetricCryptoCardTransactionManagerSpi_initTerminalSessionMac">SymmetricCryptoCardTransactionManagerSpi.initTerminalSessionMac</a>
+   * for the normative contract.
    *
    * @param openSecureSessionDataOut The data out from the card Open Secure Session command.
    * @param kif The card KIF.
@@ -64,6 +72,10 @@ public interface SymmetricCryptoCardTransactionManagerSpi {
    *
    * <p>Returns encrypted/decrypted data when the encryption is active.
    *
+   * <p>See <a
+   * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#op_SymmetricCryptoCardTransactionManagerSpi_updateTerminalSessionMac">SymmetricCryptoCardTransactionManagerSpi.updateTerminalSessionMac</a>
+   * for the normative contract.
+   *
    * @param cardApdu A byte array containing either the input or output data of a card command APDU.
    * @return null if the encryption is not activate, either the ciphered or deciphered command data
    *     if the encryption is active.
@@ -77,6 +89,10 @@ public interface SymmetricCryptoCardTransactionManagerSpi {
   /**
    * Finalizes the digest computation and returns the terminal part of the session MAC.
    *
+   * <p>See <a
+   * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#op_SymmetricCryptoCardTransactionManagerSpi_finalizeTerminalSessionMac">SymmetricCryptoCardTransactionManagerSpi.finalizeTerminalSessionMac</a>
+   * for the normative contract.
+   *
    * @return A byte array containing the terminal session MAC.
    * @throws SymmetricCryptoException If an internal error occurred.
    * @throws SymmetricCryptoIOException If an IO error occurred when processing a command.
@@ -86,6 +102,10 @@ public interface SymmetricCryptoCardTransactionManagerSpi {
 
   /**
    * Generates the terminal part of the session MAC used for an early mutual authentication.
+   *
+   * <p>See <a
+   * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#op_SymmetricCryptoCardTransactionManagerSpi_generateTerminalSessionMac">SymmetricCryptoCardTransactionManagerSpi.generateTerminalSessionMac</a>
+   * for the normative contract.
    *
    * @return A byte array containing the terminal session MAC.
    * @throws SymmetricCryptoException If an internal error occurred.
@@ -97,6 +117,10 @@ public interface SymmetricCryptoCardTransactionManagerSpi {
   /**
    * Activates the encryption/decryption of the data sent/received during the secure session.
    *
+   * <p>See <a
+   * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#op_SymmetricCryptoCardTransactionManagerSpi_activateEncryption">SymmetricCryptoCardTransactionManagerSpi.activateEncryption</a>
+   * for the normative contract.
+   *
    * @throws SymmetricCryptoException If an internal error occurred.
    * @throws SymmetricCryptoIOException If an IO error occurred when processing a command.
    * @since 0.1.0
@@ -106,6 +130,10 @@ public interface SymmetricCryptoCardTransactionManagerSpi {
   /**
    * Deactivates the encryption/decryption of the data sent/received during the secure session.
    *
+   * <p>See <a
+   * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#op_SymmetricCryptoCardTransactionManagerSpi_deactivateEncryption">SymmetricCryptoCardTransactionManagerSpi.deactivateEncryption</a>
+   * for the normative contract.
+   *
    * @throws SymmetricCryptoException If an internal error occurred.
    * @throws SymmetricCryptoIOException If an IO error occurred when processing a command.
    * @since 0.1.0
@@ -114,6 +142,10 @@ public interface SymmetricCryptoCardTransactionManagerSpi {
 
   /**
    * Verifies the card part of the session MAC finalizing the mutual authentication process.
+   *
+   * <p>See <a
+   * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#op_SymmetricCryptoCardTransactionManagerSpi_isCardSessionMacValid">SymmetricCryptoCardTransactionManagerSpi.isCardSessionMacValid</a>
+   * for the normative contract.
    *
    * @param cardSessionMac A byte array containing the card session MAC.
    * @return true if the card session MAC is validated.
@@ -127,6 +159,10 @@ public interface SymmetricCryptoCardTransactionManagerSpi {
   /**
    * Computes the needed data to operate SV card commands.
    *
+   * <p>See <a
+   * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#op_SymmetricCryptoCardTransactionManagerSpi_computeSvCommandSecurityData">SymmetricCryptoCardTransactionManagerSpi.computeSvCommandSecurityData</a>
+   * for the normative contract.
+   *
    * @param data The data involved in the preparation of an SV Reload/Debit/Undebit command.
    * @throws SymmetricCryptoException If an internal error occurred.
    * @throws SymmetricCryptoIOException If an IO error occurred when processing a command.
@@ -137,6 +173,10 @@ public interface SymmetricCryptoCardTransactionManagerSpi {
 
   /**
    * Verifies the SV card MAC.
+   *
+   * <p>See <a
+   * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#op_SymmetricCryptoCardTransactionManagerSpi_isCardSvMacValid">SymmetricCryptoCardTransactionManagerSpi.isCardSvMacValid</a>
+   * for the normative contract.
    *
    * @param cardSvMac A byte array containing the card SV MAC.
    * @return true if the card SV MAC is validated.
@@ -152,6 +192,10 @@ public interface SymmetricCryptoCardTransactionManagerSpi {
    *
    * <p>Note: the {@code kif} and {@code kvc} parameters are ignored when PIN verification is
    * performed within a Secure Session.
+   *
+   * <p>See <a
+   * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#op_SymmetricCryptoCardTransactionManagerSpi_cipherPinForPresentation">SymmetricCryptoCardTransactionManagerSpi.cipherPinForPresentation</a>
+   * for the normative contract.
    *
    * @param cardChallenge A byte array containing the card challenge.
    * @param pin A byte array containing the 4-byte PIN value.
@@ -171,6 +215,10 @@ public interface SymmetricCryptoCardTransactionManagerSpi {
    * <p>Note: the {@code kif} and {@code kvc} parameters are ignored when PIN modification is
    * performed within a Secure Session.
    *
+   * <p>See <a
+   * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#op_SymmetricCryptoCardTransactionManagerSpi_cipherPinForModification">SymmetricCryptoCardTransactionManagerSpi.cipherPinForModification</a>
+   * for the normative contract.
+   *
    * @param cardChallenge A byte array containing the card challenge.
    * @param currentPin A byte array containing the 4-byte current PIN value.
    * @param newPin A byte array containing the 4-byte new PIN value.
@@ -187,6 +235,10 @@ public interface SymmetricCryptoCardTransactionManagerSpi {
 
   /**
    * Generates an encrypted key data block for loading a key into a card.
+   *
+   * <p>See <a
+   * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#op_SymmetricCryptoCardTransactionManagerSpi_generateCipheredCardKey">SymmetricCryptoCardTransactionManagerSpi.generateCipheredCardKey</a>
+   * for the normative contract.
    *
    * @param cardChallenge A byte array containing the card challenge.
    * @param issuerKeyKif The issuer key KIF.
@@ -208,6 +260,10 @@ public interface SymmetricCryptoCardTransactionManagerSpi {
 
   /**
    * Synchronizes data of the associated card transaction crypto extension if needed.
+   *
+   * <p>See <a
+   * href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/0.1.2-SNAPSHOT/YYMMDD-SP-CNATerminalAPI-CalypsoCryptoSymmetric_v0.1.2-SNAPSHOT.html#op_SymmetricCryptoCardTransactionManagerSpi_synchronize">SymmetricCryptoCardTransactionManagerSpi.synchronize</a>
+   * for the normative contract.
    *
    * @throws SymmetricCryptoException If an internal error occurred.
    * @throws SymmetricCryptoIOException If an IO error occurred when processing a command.
